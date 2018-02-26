@@ -1,0 +1,29 @@
+{
+    "name": "kbox/base",
+    "description": "kbox for php",
+    "keywords": ["kbox"],
+    "type": "library",
+    "minimum-stability": "stable",
+    "homepage": "https://gitee.com/cwangmyth/kboxPkg.git",
+    "license": "private",
+    "require": {
+        "php": ">=7.0.0",
+        "yiisoft/yii2": ">=2.0.6"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": { "kbox\\base\\": "" }
+    },
+    "authors": [
+        {
+            "name": "wangchao",
+            "email": "wangchao@knowbox.cn"
+        }
+    ],
+    "repositories": [
+        {"type": "composer", "url": "https://packagist.phpcomposer.com"},
+        {"packagist": false}
+    ]
+}
