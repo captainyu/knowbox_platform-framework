@@ -36,6 +36,7 @@ if(!file_exists($root.'/'.$namespace)){
     foreach ($envs as $k=>$v){
         $envs[$k]['setWritable'][] = $namespace.'/runtime';
         $envs[$k]['setWritable'][] = $namespace.'/web/assets';
+        $envs[$k]['setCookieValidationKey'][] =  $namespace.'/config/main-local.php';
     }
     $envText = "<?php \r\n return ".var_export($envs,true).';';
     file_put_contents($envFile,$envText);
