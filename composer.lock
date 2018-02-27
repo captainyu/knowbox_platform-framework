@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "738562afb18d91eb4437d8abf2cb2ea7",
+    "content-hash": "3df8bee5cc959ab7d54622080fbf8518",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -330,8 +330,8 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://gitee.com/cwangmyth/composer-knowbox-base.git",
-                "reference": "8438647c4046a5ea663735792a36e837a542fb94"
+                "url": "https://gitee.com/knowbox-platform/composer-knowbox-base.git",
+                "reference": "41129ea58d767f54092c3acddccccdb4694cb1e1"
             },
             "require": {
                 "php": ">=7.0.0",
@@ -353,11 +353,11 @@
                 }
             ],
             "description": "kbox for php",
-            "homepage": "https://gitee.com/cwangmyth/kboxPkg.git",
+            "homepage": "https://gitee.com/knowbox-platform/composer-knowbox-base",
             "keywords": [
                 "kbox"
             ],
-            "time": "2018-02-26T12:04:41+00:00"
+            "time": "2018-02-27T03:06:42+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

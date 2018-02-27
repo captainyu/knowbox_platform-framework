@@ -4,7 +4,7 @@
     "keywords": ["kbox"],
     "type": "library",
     "minimum-stability": "stable",
-    "homepage": "https://gitee.com/cwangmyth/kboxPkg.git",
+    "homepage": "https://gitee.com/knowbox-platform/composer-knowbox-base",
     "license": "private",
     "require": {
         "php": ">=7.0.0",
