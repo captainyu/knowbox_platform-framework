@@ -10,7 +10,7 @@ return [
     'language'=>'zh-CN',
     'id' => 'api-knowbox',
     'basePath' => dirname(__DIR__),
-    'controllerNamespace' => 'backend\controllers',
+    'controllerNamespace' => 'kbox\base\example\controllers',
     'bootstrap' => ['log'],
     'modules' => [
         'common' => [
