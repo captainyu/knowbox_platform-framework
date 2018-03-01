@@ -28,7 +28,7 @@
         "secure-http":false
     },
     "repositories": [
-        {"type": "composer", "url": "https://asset-packagist.org"},
+        {"type": "composer", "url": "https://packagist.phpcomposer.com"},
         {"packagist": false},
         {"type": "composer", "url":"http://packages.test.knowbox.cn"}
     ]

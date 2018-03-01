@@ -179,4 +179,16 @@ class AppFunc{
         $data = preg_replace($html, '', $str);
         return $data;
     }
+
+    function getServerIp() {
+        exec('ifconfig | grep "10\\.10\\.255\\.255"', $out, $stats);
+        if (!empty($out)) {
+            $preg = "/(?:(?:1[0-9][0-9]\.)|(?:2[0-4][0-9]\.)|(?:25[0-4]\.)|(?:[1-9][0-9]\.)|(?:[0-9]\.)){3}(?:(?:1[0-9][0-9])|(?:2[0-4][0-9])|(?:25[0-4])|(?:[1-9][0-9])|(?:[0-9]))/";
+            $match = preg_match($preg,$out[0],$matches);
+            if($match){
+                return $matches[0];
+            }
+        }
+        return '';
+    }
 }
