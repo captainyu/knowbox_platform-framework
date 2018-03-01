@@ -27,6 +27,9 @@ console                  命令行模块
     controllers/            命令行controller
     models/                 命令行models
     runtime/                命令行执行信息 日志等内容 需要777权限
+docs                     文档
+    sql                     版本提交变更sql 名称类似1.0.0.sql
+    crontab                 版本提交变更定时任务 名称类似 1.0.0.cron
 appname                  appname业务模块 【通过php module.php appname创建】
     config/                 配置
     controllers/            基类
