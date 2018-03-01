@@ -7,6 +7,13 @@ php module.php {模块名称（纯字符组成）}
 php init --env={环境名称}
 或 php init  然后选择
 
+# composer管理
+php composer.phar require xxxxx
+<br/>
+php composer.phar require kbox/base dev-master (开发分支)
+<br/>
+如果本机已经安装composer,也可用composer require
+
 # 目录结构
 ```
 common                   公共模块
@@ -30,4 +37,5 @@ appname                  appname业务模块 【通过php module.php appname创�
         ...                 
     runtime/                日志等信息目录 需要777权限
     web/                    nginx根目录 入口文件index.php
+vender                    依赖包文件 composer管理
 ```
