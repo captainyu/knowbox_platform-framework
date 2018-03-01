@@ -42,6 +42,19 @@ return [
 
         ],
     ],
+    'Beta' => [
+        'path' => 'beta',
+        'setWritable' => [
+
+        ],
+        'setExecutable' => [
+            'yii',
+            'yii_test',
+        ],
+        'setCookieValidationKey' => [
+
+        ],
+    ],
     'Production' => [
         'path' => 'prod',
         'setWritable' => [

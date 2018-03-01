@@ -1,3 +1,9 @@
+# 框架地址
+https://gitee.com/knowbox-platform/kbox-platform-framework
+
+# yii参考手册
+http://www.yiichina.com/doc
+
 # 新增模块
 php module.php {模块名称（纯字符组成）}
 <br /> 
@@ -30,6 +36,10 @@ console                  命令行模块
 docs                     文档
     sql                     版本提交变更sql 名称类似1.0.0.sql
     crontab                 版本提交变更定时任务 名称类似 1.0.0.cron
+environments             环境配置 通过php init生效
+    dev                     开发环境
+    beta                    测试环境
+    prod                    线上环境
 appname                  appname业务模块 【通过php module.php appname创建】
     config/                 配置
     controllers/            基类
