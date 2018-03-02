@@ -22,6 +22,7 @@ class ExampleController extends BaseController {
      * { "code" : 500, "message":"error_message" ,"data":[]}
      */
     public function actionTest(){
+        $this->checkAuth(1001);
         //业务场景
         $model = new Example(['scenario'=>Example::SCENARIO_TEST]);
         //传入参数
