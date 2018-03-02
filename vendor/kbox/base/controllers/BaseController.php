@@ -135,7 +135,7 @@ class BaseController extends Controller
             $model->authRole = $priv;
             return $model->checkAuthWithRole($exception);
         }elseif($this->checkAuthType === 'priv'){
-            $model->authRole = $priv;
+            $model->authPriv = $priv;
             return $model->checkAuthWithPriv($exception);
         }else{
             throw new Exception("不支持的权限校验类型",Exception::ERROR_PRIV);
