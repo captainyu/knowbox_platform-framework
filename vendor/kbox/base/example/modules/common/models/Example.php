@@ -1,5 +1,5 @@
 <?php
-namespace kbox\base\example\modules\common\controllers;
+namespace kbox\base\example\modules\common\models;
 use kbox\base\example\models\AuthBaseModel;
 
 class Example extends AuthBaseModel {
@@ -15,6 +15,7 @@ class Example extends AuthBaseModel {
     {
         $scenarios =  parent::scenarios();
         $scenarios[self::SCENARIO_TEST] = ['test_param'];
+        return $scenarios;
     }
 
     //规则 规则对象必须是类public属性名

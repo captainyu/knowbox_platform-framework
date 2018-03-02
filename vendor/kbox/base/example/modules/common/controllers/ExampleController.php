@@ -2,6 +2,7 @@
 namespace kbox\base\example\modules\common\controllers;
 
 use kbox\base\example\controllers\BaseController;
+use kbox\base\example\modules\common\models\Example;
 
 class ExampleController extends BaseController {
 
