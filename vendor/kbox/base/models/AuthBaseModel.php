@@ -65,7 +65,7 @@ class AuthBaseModel extends RequestBaseModel
     }
 
     public function getPrivList($userId){
-        if(!empty(\Yii::$app->params['dbmodel_role_priv']) && !empty(\Yii::$app->params['dbmodel_user_role'])){
+        if(empty(\Yii::$app->params['dbmodel_role_priv']) || empty(\Yii::$app->params['dbmodel_user_role'])){
             return [];
         }
         if(isset($this->_privList)){

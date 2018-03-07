@@ -15,7 +15,7 @@ class Log extends Component
                 'targets' => [
                     //info
                     [
-                        'class' => 'yii\log\FileTarget',
+                        'class' => 'kbox\base\components\logs\FileTarget',
                         'levels' => ['info'],
                         'categories' => ['access'],
                         'logFile' => '@runtime/logs/access.log.'.date('Ymd'),
@@ -24,7 +24,7 @@ class Log extends Component
                     ],
                     //console
                     [
-                        'class' => 'yii\log\FileTarget',
+                        'class' => 'kbox\base\components\logs\FileTarget',
                         'levels' => ['info'],
                         'categories' => ['console'],
                         'logFile' => '@runtime/logs/console.log.'.date('Ymd'),
@@ -33,7 +33,7 @@ class Log extends Component
                     ],
                     //custom
                     [
-                        'class' => 'yii\log\FileTarget',
+                        'class' => 'kbox\base\components\logs\FileTarget',
                         'levels' => ['info'],
                         'categories' => ['custom'],
                         'logFile' => '@runtime/logs/custom.log.'.date('Ymd'),
@@ -42,7 +42,7 @@ class Log extends Component
                     ],
                     //apierror
                     [
-                        'class' => 'yii\log\FileTarget',
+                        'class' => 'kbox\base\components\logs\FileTarget',
                         'levels' => ['warning'],
                         'categories' => ['apierror'],
                         'logFile' => '@runtime/logs/apierror.log.'.date('Ymd'),
@@ -51,7 +51,7 @@ class Log extends Component
                     ],
                     //syserror
                     [
-                        'class' => 'yii\log\FileTarget',
+                        'class' => 'kbox\base\components\logs\FileTarget',
                         'levels' => ['error'],
                         'categories' => ['syserror'],
                         'logFile' => '@runtime/logs/syserror.log.'.date('Ymd'),
@@ -61,7 +61,7 @@ class Log extends Component
                     //profile
                     /*
                     [
-                        'class' => 'yii\log\FileTarget',
+                        'class' => 'kbox\base\components\logs\FileTarget',
                         'levels' => ['profile'],
                         'logFile' => '@runtime/logs/profile.log.'.date('Ymd'),
                         'logVars' => [],

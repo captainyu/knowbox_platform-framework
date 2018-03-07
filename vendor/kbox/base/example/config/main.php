@@ -36,7 +36,7 @@ return [
             'targets' => [
                 //info
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class' => 'kbox\base\components\logs\FileTarget',
                     'levels' => ['info'],
                     'categories' => ['access'],
                     'logFile' => '@runtime/logs/access.log.'.date('Ymd'),
@@ -45,7 +45,7 @@ return [
                 ],
                 //console
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class' => 'kbox\base\components\logs\FileTarget',
                     'levels' => ['info'],
                     'categories' => ['console'],
                     'logFile' => '@runtime/logs/console.log.'.date('Ymd'),
@@ -54,7 +54,7 @@ return [
                 ],
                 //custom
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class' => 'kbox\base\components\logs\FileTarget',
                     'levels' => ['info'],
                     'categories' => ['custom'],
                     'logFile' => '@runtime/logs/custom.log.'.date('Ymd'),
@@ -63,7 +63,7 @@ return [
                 ],
                 //apierror
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class' => 'kbox\base\components\logs\FileTarget',
                     'levels' => ['warning'],
                     'categories' => ['apierror'],
                     'logFile' => '@runtime/logs/apierror.log.'.date('Ymd'),
@@ -72,7 +72,7 @@ return [
                 ],
                 //syserror
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class' => 'kbox\base\components\logs\FileTarget',
                     'levels' => ['error'],
                     'categories' => ['syserror'],
                     'logFile' => '@runtime/logs/syserror.log.'.date('Ymd'),
@@ -82,7 +82,7 @@ return [
                 //profile
                 /*
                 [
-                    'class' => 'yii\log\FileTarget',
+                    'class' => 'kbox\base\components\logs\FileTarget',
                     'levels' => ['profile'],
                     'logFile' => '@runtime/logs/profile.log.'.date('Ymd'),
                     'logVars' => [],
