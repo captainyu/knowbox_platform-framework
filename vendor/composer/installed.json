@@ -3536,7 +3536,7 @@
         "source": {
             "type": "git",
             "url": "https://gitee.com/knowbox-platform/composer-knowbox-base.git",
-            "reference": "482921d966b8b2e5f73beb817753363fd80f7bba"
+            "reference": "a0038ee36c5f0d58c3d7d11cec6df1b52f087f0e"
         },
         "require": {
             "php": ">=7.0.0",
@@ -3544,7 +3544,7 @@
             "yiisoft/yii2": ">=2.0.6",
             "yiisoft/yii2-redis": "^2.0"
         },
-        "time": "2018-03-28 11:26:45",
+        "time": "2018-03-28 12:12:20",
         "type": "library",
         "installation-source": "source",
         "autoload": {

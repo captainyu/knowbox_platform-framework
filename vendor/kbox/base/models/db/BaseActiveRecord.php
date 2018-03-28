@@ -57,4 +57,30 @@ class BaseActiveRecord extends \yii\db\ActiveRecord {
             ->all();
     }
 
+    public static function addAllWithColumnRow($columns,$rows,$split=100){
+        $rowsList = array_chunk($rows,$split);
+        foreach ($rowsList as $rowChunk){
+            DBCommon::batchInsertAll(
+                static::tableName(),
+                $columns,
+                $rowChunk,
+                static::getDb(),
+                'INSERT'
+            );
+        }
+    }
+
+    public static function addUpdateAllWithColumnRow($columns,$rows,$split=100){
+        $rowsList = array_chunk($rows,$split);
+        foreach ($rowsList as $rowChunk){
+            DBCommon::batchInsertAll(
+                static::tableName(),
+                $columns,
+                $rowChunk,
+                static::getDb(),
+                'UPDATE'
+            );
+        }
+    }
+
 }
