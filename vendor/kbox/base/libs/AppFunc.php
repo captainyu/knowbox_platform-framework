@@ -18,6 +18,7 @@ class AppFunc{
     }
 
     public static function curlPostWithHttpInfo($url,$data=[],$headers=[]){
+        !empty(\Yii::$app->params['auth_platform_id']) && $data['auth_platform_id'] = \Yii::$app->params['auth_platform_id'];
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -148,7 +149,7 @@ class AppFunc{
 
     public static function joinRecursion($split,$array){
         foreach($array as $k=>$v){
-            is_array($v) && $array[$k] = self::joinRecursion($split,$v);
+            is_array($v) && $array[$k] = static::joinRecursion($split,$v);
         }
         return join($split,$array);
     }

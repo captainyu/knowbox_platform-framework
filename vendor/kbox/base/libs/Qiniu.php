@@ -21,7 +21,7 @@ class Qiniu
     }
 
     public static function getInfo($key,$bucket){
-        $auth = new Auth(self::ACCESSKEY, self::SECRETKEY);
+        $auth = new Auth(static::ACCESSKEY, static::SECRETKEY);
         $bucketMgr = new BucketManager($auth);
         list($ret, $err) = $bucketMgr->stat($bucket, $key);
         if ($err !== null) {
@@ -34,8 +34,8 @@ class Qiniu
 
 
     public static function rename($fromname,$toName){
-        $auth = new Auth(self::ACCESSKEY, self::SECRETKEY);
-        $bucket = self::BUCKET;
+        $auth = new Auth(static::ACCESSKEY, static::SECRETKEY);
+        $bucket = static::BUCKET;
         //上传
         $model = new BucketManager($auth);
         $ret = $model->rename($bucket,$fromname,$toName);
@@ -43,8 +43,8 @@ class Qiniu
     }
 
     public static function uploadFile($key,$filePath){
-        $auth = new Auth(self::ACCESSKEY, self::SECRETKEY);
-        $bucket = self::BUCKET;
+        $auth = new Auth(static::ACCESSKEY, static::SECRETKEY);
+        $bucket = static::BUCKET;
         $upToken = $auth->uploadToken($bucket);
         //上传
         $model = new UploadManager();
@@ -58,8 +58,8 @@ class Qiniu
     }
 
     public static function uploadFileStream($key,$data,$params = null,$mime = 'application/octet-stream',$checkCrc = false){
-        $auth = new Auth(self::ACCESSKEY, self::SECRETKEY);
-        $bucket = self::BUCKET;
+        $auth = new Auth(static::ACCESSKEY, static::SECRETKEY);
+        $bucket = static::BUCKET;
         $upToken = $auth->uploadToken($bucket);
         //上传
         $model = new UploadManager();

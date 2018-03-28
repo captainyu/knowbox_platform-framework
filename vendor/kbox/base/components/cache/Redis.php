@@ -8,7 +8,7 @@ class Redis extends \yii\redis\Connection
 
     public function executeCommand($name, $params = [])
     {
-        $switchCatch = self::SWITCH_CACHE;
+        $switchCatch = static::SWITCH_CACHE;
         if(!$switchCatch) {
             return null;
         }

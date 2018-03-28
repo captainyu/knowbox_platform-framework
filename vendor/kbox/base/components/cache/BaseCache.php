@@ -16,7 +16,7 @@ class BaseCache extends Component
     public static function gen()
     {
         $args = func_get_args();
-        $args[0] = self::CACHE_PREFIX.$args[0];
+        $args[0] = static::CACHE_PREFIX.$args[0];
         return call_user_func_array('sprintf', $args);
     }
 
@@ -27,14 +27,14 @@ class BaseCache extends Component
 
     public static function del($key, $conn = null)
     {
-        $conn =  empty($conn) ? self::getRedis() : $conn;
+        $conn =  empty($conn) ? static::getRedis() : $conn;
 
         return $conn->del($key);
     }
 
     public static function setex($key, $expire, $val, $conn = null)
     {
-        $conn =  empty($conn) ? self::getRedis() : $conn;
+        $conn =  empty($conn) ? static::getRedis() : $conn;
 
         if(! is_string($val)) {
             $val= json_encode($val);
@@ -44,7 +44,7 @@ class BaseCache extends Component
 
     public static function get($key,$json = false)
     {
-        $conn = self::getRedis();
+        $conn = static::getRedis();
         $data = $conn->get($key);
         return $json ? json_decode($data,true) : $data;
     }

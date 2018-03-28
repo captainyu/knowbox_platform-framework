@@ -27,7 +27,7 @@ class RequestBaseModel extends BaseModel
      */
     public function getUser(){
         //根据token获取userId
-        if(!empty(self::$_user)) return self::$_user;
+        if(!empty(static::$_user)) return static::$_user;
 
         if(empty(\Yii::$app->params['usercenter_url'] )){
             throw new Exception('请设置用户中心',Exception::ERROR_CONFIG);
@@ -49,13 +49,13 @@ class RequestBaseModel extends BaseModel
             $user = array_merge($user,$userSelf);
         }
 
-       self::$_user = $user;
-        return self::$_user;
+        static::$_user = $user;
+        return static::$_user;
     }
 
     public function setUser($user){
         if(!empty($user)){
-            self::$_user = $user;
+            static::$_user = $user;
         }
     }
 }

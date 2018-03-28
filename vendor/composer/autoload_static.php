@@ -12,6 +12,7 @@ class ComposerStaticInit1383e58891fcc9437e631f3fca61ba46
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '841780ea2e1d6545ea3a253239d59c05' => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu/functions.php',
         '180092cfc969a12e06f2132a203a3184' => __DIR__ . '/..' . '/codeception/verify/src/Codeception/function.php',
     );
 
@@ -55,6 +56,10 @@ class ComposerStaticInit1383e58891fcc9437e631f3fca61ba46
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\BrowserKit\\' => 29,
         ),
+        'Q' => 
+        array (
+            'Qiniu\\' => 6,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -79,6 +84,7 @@ class ComposerStaticInit1383e58891fcc9437e631f3fca61ba46
         ),
         'C' => 
         array (
+            'Codeception\\PHPUnit\\' => 20,
             'Codeception\\Extension\\' => 22,
             'Codeception\\' => 12,
         ),
@@ -91,7 +97,7 @@ class ComposerStaticInit1383e58891fcc9437e631f3fca61ba46
         ),
         'yii\\redis\\' => 
         array (
-            0 => __DIR__ . '/..' . '/yiisoft/yii2-redis',
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-redis/src',
         ),
         'yii\\gii\\' => 
         array (
@@ -171,6 +177,10 @@ class ComposerStaticInit1383e58891fcc9437e631f3fca61ba46
         array (
             0 => __DIR__ . '/..' . '/symfony/browser-kit',
         ),
+        'Qiniu\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -199,14 +209,18 @@ class ComposerStaticInit1383e58891fcc9437e631f3fca61ba46
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'Codeception\\PHPUnit\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codeception/phpunit-wrapper/src',
+        ),
         'Codeception\\Extension\\' => 
         array (
             0 => __DIR__ . '/..' . '/codeception/base/ext',
         ),
         'Codeception\\' => 
         array (
-            0 => __DIR__ . '/..' . '/codeception/base/src/Codeception',
-            1 => __DIR__ . '/..' . '/codeception/stub/src',
+            0 => __DIR__ . '/..' . '/codeception/stub/src',
+            1 => __DIR__ . '/..' . '/codeception/base/src/Codeception',
         ),
     );
 

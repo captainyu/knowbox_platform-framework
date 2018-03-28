@@ -9,7 +9,7 @@ class DBCommon extends BaseActiveRecord {
         if(empty($rows)){
             return 0;
         }
-        empty($db) && $db = self::getDb();
+        empty($db) && $db = static::getDb();
         $schema = $db->getSchema();
         if (($tableSchema = $schema->getTableSchema($table)) !== null) {
             $columnSchemas = $tableSchema->columns;

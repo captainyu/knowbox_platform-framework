@@ -51,10 +51,10 @@ return array (
   'yiisoft/yii2-redis' => 
   array (
     'name' => 'yiisoft/yii2-redis',
-    'version' => '2.0.7.0',
+    'version' => '2.0.8.0',
     'alias' => 
     array (
-      '@yii/redis' => $vendorDir . '/yiisoft/yii2-redis',
+      '@yii/redis' => $vendorDir . '/yiisoft/yii2-redis/src',
     ),
   ),
 );
