@@ -21,11 +21,11 @@ Content Cell  | Content Cell
 | Help      | **Display the** help window.|
 | Close     | _Closes_ a window     |
 
-| Default-Align | Left-Aligned  | Center Aligned  | Right Aligned |
-| ------------- | :------------ |:---------------:| -----:|
-| 1             | col 3 is      | some wordy text | $1600 |
-| 2             | col 2 is      | centered        |   $12 |
-| 3             | zebra stripes | are neat        |    $1 |
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
 
 
 Simple | Table
@@ -54,19 +54,3 @@ Escaped \\ | Pipe | Broken | Blank
 | :----- | ----- |
 | 3      | 4     |
 3      | 4
-
-| Table | With | Empty | Cells |
-| ----- | ---- | ----- | ----- |
-|       |      |       |       |
-|   a   |      |   b   |       |
-|       |  a   |       |   b   |
-|   a   |      |       |   b   |
-|       |  a   |   b   |       |
-
-   |
--- | --
-   |
-   
-|   |   |
-| - | - |
-|   |   |

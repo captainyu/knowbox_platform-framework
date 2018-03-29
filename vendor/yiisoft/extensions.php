@@ -57,4 +57,13 @@ return array (
       '@yii/redis' => $vendorDir . '/yiisoft/yii2-redis/src',
     ),
   ),
+  'yiisoft/yii2-apidoc' => 
+  array (
+    'name' => 'yiisoft/yii2-apidoc',
+    'version' => '2.1.0.0',
+    'alias' => 
+    array (
+      '@yii/apidoc' => $vendorDir . '/yiisoft/yii2-apidoc',
+    ),
+  ),
 );
