@@ -1,5 +1,5 @@
 <?php
-namespace common\components\pgsql;
+namespace kbox\base\components\pgsql;
 
 use yii\db\Connection;
 

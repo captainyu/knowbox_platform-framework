@@ -64,7 +64,7 @@ return [
                 //apierror
                 [
                     'class' => 'kbox\base\components\logs\FileTarget',
-                    'levels' => ['warning'],
+                    'levels' => ['warning','info','error'],
                     'categories' => ['apierror'],
                     'logFile' => '@runtime/logs/apierror.log.'.date('Ymd'),
                     'logVars' => [],
@@ -73,7 +73,7 @@ return [
                 //syserror
                 [
                     'class' => 'kbox\base\components\logs\FileTarget',
-                    'levels' => ['error'],
+                    'levels' => ['error','info','warning'],
                     'categories' => ['syserror'],
                     'logFile' => '@runtime/logs/syserror.log.'.date('Ymd'),
                     'logVars' => [],
