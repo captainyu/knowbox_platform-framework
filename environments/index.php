@@ -29,7 +29,7 @@
  * ```
  */
 return [
-    'Development' => [
+    'dev' => [
         'path' => 'dev',
         'setWritable' => [
 
@@ -42,7 +42,7 @@ return [
 
         ],
     ],
-    'Beta' => [
+    'beta' => [
         'path' => 'beta',
         'setWritable' => [
 
@@ -55,7 +55,7 @@ return [
 
         ],
     ],
-    'Production' => [
+    'prod' => [
         'path' => 'prod',
         'setWritable' => [
 
